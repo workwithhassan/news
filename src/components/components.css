@@ -1,0 +1,46 @@
+/* News Feed CSS */
+
+.feed-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feed-content .card {
+  width: 30%;
+  margin: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .feed-content .card {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 800px !important;
+  }
+  .feed-content .card {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .feed-content {
+    justify-content: center;
+  }
+  .feed-content .card {
+    width: 100%;
+  }
+}
+
+/* Personalized News Feed */
+.personalizedNewsFeed {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+}
+
+.checkbox {
+  width: 15%;
+}
